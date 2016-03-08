@@ -1,9 +1,9 @@
-package part2;
+package question2;
 
-public class NumFloat implements Num {
-    Float d;
+public class NumDouble implements Num {
+    Double d;
 
-    public NumFloat(Float d) {
+    public NumDouble(Double d) {
         this.d = d;
     }
 
@@ -14,7 +14,7 @@ public class NumFloat implements Num {
 
     @Override
     public void sqrt() {
-        d = (float) Math.sqrt(d);
+        d = Math.sqrt(d);
     }
 
     @Override

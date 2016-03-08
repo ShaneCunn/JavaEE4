@@ -1,4 +1,4 @@
-package part2;
+package question2;
 
 public interface Num {
     void neg(); // negation

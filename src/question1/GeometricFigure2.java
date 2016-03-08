@@ -1,9 +1,8 @@
-package pack;
+package question1;
 
 public abstract class GeometricFigure2 {
     private boolean filled;
 
-    //public static final double PI = Math.PI;
 
     public GeometricFigure2() {
         filled = false;

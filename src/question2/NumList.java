@@ -1,4 +1,4 @@
-package part2;
+package question2;
 
 import java.util.ArrayList;
 
@@ -7,15 +7,15 @@ public class NumList implements Num {
     ArrayList<Num> numArray = new ArrayList<Num>();
 
     public NumList(double[] b) {
-        for (double aB : b) {
-            numArray.add(new NumDouble(aB));
+        for (double numDouble : b) {
+            numArray.add(new NumDouble(numDouble));
 
         }
     }
 
     public NumList(Float[] c) {
-        for (Float aC : c) {
-            numArray.add(new NumFloat(aC));
+        for (Float Numfloat : c) {
+            numArray.add(new NumFloat(Numfloat));
 
         }
     }
@@ -39,28 +39,13 @@ public class NumList implements Num {
 
     @Override
     public String asString() {
-        for (Num aNumArray : numArray) {
-            System.out.println(aNumArray.asString());
+        for (Num NumArray2 : numArray) {
+            System.out.println(NumArray2.asString());
 
         }
 
         return numArray.toString();
     }
 
-	/*public NumList(NumDouble[] a) {
-
-		for (int i = 0; i < a.length; i++) {
-
-			numArray.add(a[i]);
-		}
-	}
-
-	public NumList(NumFloat[] a) {
-
-		for (int i = 0; i < a.length; i++) {
-
-			numArray.add(a[i]);
-		}
-	}*/
 
 }
